@@ -1,0 +1,15 @@
+.detailsStyle:active{
+    border:0px;
+}
+.aStyle {
+    cursor: pointer;
+}
+    .aStyle:hover {
+        color: #B22222;
+    }
+    .aStyle:active {
+        color: #B22222;
+    }
+table.speaker-list {
+    table-layout: fixed;
+}

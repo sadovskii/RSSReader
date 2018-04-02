@@ -1,0 +1,50 @@
+﻿@model IEnumerable<RSSReaderWEB.Models.RSSFeedViewModel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container-fluid p-2">
+    <h3>Новостная лента</h3>
+
+    @using (Ajax.BeginForm("GetArticles", new { security = 1 }, new AjaxOptions { UpdateTargetId = "results" }))
+    {
+        <div class="col-4">
+            <div class="form-group">
+                <label for="exampleSelect1">Источник ленты</label>
+                <select class="form-control" id="exampleSelect1" name="chooseSourse">
+                    <option value=-1>Все</option>
+                    
+                    @foreach (var a in Model)
+                    {
+                        <option value=@a.Id>@a.Name</option>
+                        
+                    }
+                </select>
+            </div>
+            <fieldset class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="1" checked>
+                        Сортиовать по дате
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="2">
+                        Сортировать по источнику
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <input type="submit" value="Submit" />
+    }
+    <div class="m-1 p-0">
+        <div id="results" style="overflow-y:auto; width:100%"></div>
+    </div>
+
+</div>
+
+
+
+

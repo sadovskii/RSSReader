@@ -1,0 +1,12 @@
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\TestRSS.DAL.dll.config
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\TestRSS.DAL.dll
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\TestRSS.DAL.pdb
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\EntityFramework.dll
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\EntityFramework.xml
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\obj\Debug\TestRSS.DAL.csprojResolveAssemblyReference.cache
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\obj\Debug\TestRSS.DAL.csproj.CoreCompileInputs.cache
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\obj\Debug\TestRSS.DAL.csproj.CopyComplete
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\obj\Debug\TestRSS.DAL.dll
+E:\учеба\c#\тестовые задания\TestRSS\TestRSS\TestRSS.DAL\obj\Debug\TestRSS.DAL.pdb

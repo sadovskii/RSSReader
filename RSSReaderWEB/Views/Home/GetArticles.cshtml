@@ -1,0 +1,32 @@
+﻿@model PagedList.IPagedList<RSSReaderWEB.Models.ArticleViewModel>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("GetArticles", new { page = page, optionsRadios = 0, chooseSourse = 0,  security = -1}),
+    PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions(){  HttpMethod = "GET", UpdateTargetId = "results" }))
+<table class="table table-bordered table-hover d-md-block">
+    <thead>
+        <tr>
+            <th class="col-md-1">Источник</th>
+            <th class="col-md-1">Название новости</th>
+            <th class="col-md-1">Описание новости</th>
+            <th class="col-md-1">Дата публикации</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr>
+                <td>
+                    <a href="@a.URL" class="text-left">@a.URL</a>
+                </td>
+                <td>@a.Title</td>
+                <td>
+                    <p class="text-left">@Html.Raw(a.DescriptionOfTheNews)</p>
+                </td>
+                <td>@a.PublicationDate.Date</td>
+            </tr>
+        }
+    </tbody>
+</table>
